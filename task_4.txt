@@ -1,0 +1,26 @@
+# task_4
+
+## Анализ сделанных изменений в Git
+
+### 1. Внесение изменений в файлы
+Добавляем новую строку в INFO.md и изменяем README.md:
+echo "new line" >> INFO.md
+echo "Hello, Hexlet! How are you?" > README.md
+
+### 2. Проверка статуса репозитория
+git status
+
+### 3. Просмотр изменений
+git diff
+
+### 4. Добавление изменений в индекс
+git add INFO.md README.md
+
+### 5. Просмотр изменений в индексе
+git diff --staged
+
+### 6. Коммит изменений
+git commit -m "add new content"
+
+### 7. Отправка изменений на GitHub
+git push
