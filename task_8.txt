@@ -1,0 +1,15 @@
+# task_8.sh
+# Скрипт демонстрирует изменение последнего коммита с помощью --amend
+
+cd DockerGitCourse
+
+echo "experiment with amend" >> INFO.md
+echo "experiment with amend" >> README.md
+
+git add INFO.md
+git commit -m "add content to INFO.md and README.md"
+
+git add README.md
+git commit --amend --no-edit
+
+git push origin main

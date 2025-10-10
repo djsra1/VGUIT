@@ -1,0 +1,17 @@
+cd DockerGitCourse — переходит в твой репозиторий.
+
+echo "INFO.md" > .gitignore — создаёт .gitignore и добавляет туда правило для игнорирования INFO.md.
+
+git add .gitignore — добавляет .gitignore в индекс.
+
+git commit -m "add .gitignore and ignore INFO.md" — фиксирует добавление .gitignore.
+
+git rm --cached INFO.md — удаляет INFO.md из индекса (Git перестаёт отслеживать его).
+
+git commit -m "remove INFO.md from repo" — фиксирует удаление из репозитория.
+
+touch INFO.md — создаёт новый файл INFO.md, чтобы проверить, что он теперь игнорируется.
+
+git status — показывает, что INFO.md не отображается в статусе (т.е. игнорируется).
+
+git push origin main — заливает изменения на GitHub.
