@@ -1,0 +1,37 @@
+# task_3
+
+## Рабочая директория и Git
+
+### 1. Удаление файла
+Удаляем файл PEOPLE.md и проверяем статус:
+rm PEOPLE.md
+git status
+
+### 2. Восстановление файла
+Восстанавливаем удалённый файл:
+git restore PEOPLE.md
+git status
+
+### 3. Коммит удаления
+Удаляем файл и фиксируем изменения через индекс:
+rm PEOPLE.md
+git add PEOPLE.md
+git commit -m 'remove PEOPLE.md'
+
+Или сразу с помощью git rm:
+git rm PEOPLE.md
+git commit -m 'remove PEOPLE.md'
+
+### 4. Самостоятельная работа
+- Удалить файл NEW.md и сделать коммит:
+rm NEW.md
+git add NEW.md
+git commit -m 'remove NEW.md'
+
+- Добавить файл INFO.md с текстом и сделать коммит:
+echo 'git is awesome!' > INFO.md
+git add INFO.md
+git commit -m 'add INFO.md'
+
+- Отправить изменения на GitHub:
+git push
