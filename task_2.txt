@@ -1,0 +1,56 @@
+# Git: Работа с репозиторием DockerGitCourse
+
+## Добавление репозитория на GitHub
+# Создаем репозиторий на GitHub с именем DockerGitCourse (пустой)
+
+# Подключаем удаленный репозиторий
+git remote add origin git@github.com:<USERNAME>/DockerGitCourse.git
+
+# Переименовываем ветку в main
+git branch -M main
+
+# Отправляем локальные коммиты на GitHub
+git push -u origin main
+
+---
+
+## Клонирование репозитория
+# Удаляем локальный репозиторий (для проверки клонирования)
+cd ..
+rm -rf DockerGitCourse
+
+# Клонируем репозиторий с GitHub
+git clone git@github.com:<USERNAME>/DockerGitCourse.git
+
+# Переходим в директорию проекта
+cd DockerGitCourse
+
+# Смотрим содержимое
+ls -la
+
+---
+
+## Получение изменений с GitHub
+# Перед началом работы забираем изменения
+git pull --rebase
+
+# Проверяем статус
+git status
+
+---
+
+## Работа с новым файлом
+# Создаем новый файл
+echo 'Новый файл для проверки' > NEW.md
+
+# Добавляем файл в индекс
+git add NEW.md
+
+# Делаем коммит
+git commit -m 'add NEW.md'
+
+# Отправляем изменения на GitHub
+git push
+
+# Проверяем финальный статус
+git status
