@@ -1,0 +1,9 @@
+touch FILE.md
+git add FILE.md
+git status # покажет новый файл готовый к коммиту
+
+git stash # спрятали изменения
+git status # рабочая директория чистая
+
+git stash pop # восстановили изменения
+git status # изменения вернулись
